@@ -11705,7 +11705,7 @@ body.sal-disabled [data-sal|=flip] {
 .haeder-default .header-left {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   flex-basis: 55%;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -20922,7 +20922,7 @@ tbody.ranking tr td .thumbnail img {
   border-radius: 5px;
   display: flex;
   max-width: max-content;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 20px 0 0 auto;
 }
 
@@ -20944,7 +20944,7 @@ tbody.ranking tr td .thumbnail img {
   border-radius: 5px;
   display: flex;
   max-width: max-content;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 20px 0 0 auto;
 }
 
@@ -20956,7 +20956,7 @@ tbody.ranking tr td .thumbnail img {
   border-radius: 5px !important;
   display: flex !important;
   max-width: max-content;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 20px 0 0 auto;
 }
 .save-btn-edit .btn {

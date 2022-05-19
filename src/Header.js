@@ -2,14 +2,20 @@ import React from "react"
 
 
 //이미지 리스트
-import logo_white from './assets/images/logo/logo-white.png'
-import logo_dark from './assets/images/logo/logo-dark.png'
+import logo_white from './assets/images/logo/logo-white.png';
+import logo_dark from './assets/images/logo/logo-dark.png';
+import sun_01 from './assets/images/icons/sun-01.svg';
+import vector from './assets/images/icons/vector.svg'; 
+import boy_avater from './assets/images/icons/boy-avater.png'; 
+import portfolio_07 from './assets/images/portfolio/portfolio-07.jpg'; 
+import portfolio_01 from './assets/images/portfolio/portfolio-01.jpg'; 
+
 
 const Header =(props)=>{
 
 
     return(
-    <header class="rn-header haeder-default header--sticky">
+    <header className="rn-header haeder-default header--sticky">
         <div>
             <div className="container">
             <div className="header-inner">
@@ -38,23 +44,23 @@ const Header =(props)=>{
                     </div>
                     <div className="setting-option rn-icon-list notification-badge">
                         <div className="icon-box">
-                            <a href="https://localhost:3000"><i className="feather-bell"></i><span className="badge">6</span></a>
+                            <a href="https://localhost:3000"><i className="feather-bell"></i><span className="badge">0</span></a>
                         </div>
                     </div>
-                    {/* <div className="header_admin" id="header_admin">
+                    <div className="header_admin" id="header_admin">
                         <div className="setting-option rn-icon-list user-account">
                             <div className="icon-box">
-                                <a href="author.html"><img src="./assets/images/icons/boy-avater.png" alt="Images"/></a>
+                                <a href="author.html"><img src={boy_avater} alt="Images"/></a>
                                 <div className="rn-dropdown">
                                     <div className="rn-inner-top">
                                         <h4 className="title"><a href="product-details.html">Christopher William</a></h4>
-                                        <span><a href="">Set Display Name</a></span>
+                                        <span><a href="https://localhost:3000">Set Display Name</a></span>
                                     </div>
                                     <div className="rn-product-inner">
                                         <ul className="product-list">
                                             <li className="single-product-list">
                                                 <div className="thumbnail">
-                                                    <a href="product-details.html"><img src="./assets/images/portfolio/portfolio-07.jpg" alt="Nft Product Images"/></a>
+                                                    <a href="product-details.html"><img src={portfolio_07} alt="Nft Product Images"/></a>
                                                 </div>
                                                 <div className="content">
                                                     <h6 className="title"><a href="product-details.html">Balance</a></h6>
@@ -64,7 +70,7 @@ const Header =(props)=>{
                                             </li>
                                             <li className="single-product-list">
                                                 <div className="thumbnail">
-                                                    <a href="product-details.html"><img src="./assets/images/portfolio/portfolio-01.jpg" alt="Nft Product Images"/></a>
+                                                    <a href="product-details.html"><img src={portfolio_01} alt="Nft Product Images"/></a>
                                                 </div>
                                                 <div className="content">
                                                     <h6 className="title"><a href="product-details.html">Balance</a></h6>
@@ -86,7 +92,7 @@ const Header =(props)=>{
                                 </div>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
 
                     <div className="setting-option mobile-menu-bar d-block d-xl-none">
@@ -97,26 +103,26 @@ const Header =(props)=>{
                         </div>
                     </div>
 
-                    {/* <div id="my_switcher" className="my_switcher setting-option">
+                    <div id="my_switcher" className="my_switcher setting-option">
                         <ul>
                             <li>
-                                <a href="javascript: void(0);" data-theme="light" className="setColor light">
-                                    <img className="sun-image" src="./src/assets/images/icons/sun-01.svg" alt="Sun images"/>
+                                <a href="https://localhost:3000" data-theme="light" className="setColor light">
+                                    <img className="sun-image" src={sun_01} alt="Sun images"/>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript: void(0);" data-theme="dark" className="setColor dark">
-                                    <img className="Victor Image" src="./src/assets/images/icons/vector.svg" alt="Vector Images"/>
+                                <a href="https://localhost:3000" data-theme="dark" className="setColor dark">
+                                    <img className="Victor Image" src={vector} alt="Vector Images"/>
                                 </a>
                             </li>
                         </ul>
-                    </div> */}
+                    </div>
 
 
                 </div>
+                </div>
             </div>
-        </div>
-    </div>     
+        </div>     
 </header>
     );
 };
