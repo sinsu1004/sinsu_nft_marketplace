@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './Header.js';
+import {BrowserRouter as Router,Route} from 'react-router-dom';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+// import "./assets/css/plugins/feature.css"
+// import "./assets/css/plugins/jquery-ui.min.css"
+// import "./assets/css/vendor/bootstrap.min.css"
+// import "./assets/css/vendor/nice-select.css"
+// import "./assets/css/vendor/odometer.css"
+// import "./assets/css/vendor/slick-theme.css"
+// import "./assets/css/vendor/slick.css"  
+
+
+
+const App=()=> {
+
+    return (
+      
+      <>
+        {<Header/>}
+        <Router>
+          <Route component={Header}/>
+        
+
+
+        </Router>
+      
+      </>
+    );
 }
 
 export default App;
